@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         AmusementPark park = new AmusementPark("Wonderland Park", "City Center", 50.0);
-        Ride rollerCoaster = new Ride("Roller Coaster","vary D");
+        Ride rollerCoaster = new Ride("Roller Coaster","this is desciption");
         FoodStall fastFood = new FoodStall("Fast-Food");
         GiftShop gshop = new GiftShop("Mr-Jacks-Shop");
         // Create visitors
