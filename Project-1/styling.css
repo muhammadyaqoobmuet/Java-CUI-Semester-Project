@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Monument'; /* This is the name you'll use to refer to the font */
+    src: url('RussoOne-Regular.ttf') format('.ttf'); /* Specify the path to your font file */
+    /* You can also include other font formats for better browser compatibility */
+  }
+  
+
+
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+#main{
+    background-color:rgb(176 144 185);
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: blue; */
+}
+#part2{
+    height: 100%;
+    width: 66%;
+    background-color: rgb(35, 88, 188);
+    background-image:url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#part3{
+    height: 100%;
+    width: 8%;
+    /* background-color: red; */
+}
+#overlay{
+    background-color: rgba(190, 165, 171, 0.5);
+    height: 100%;
+    width: 100%;
+}
+#text-div{
+    /* background-color: red; */
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    top: 50%;
+    left: 9%;
+    transform: translate(0,-50%);
+}
+#text-div h1{
+    font-size: 59px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 55px;
+    font-weight: 100px;
+    color: whitesmoke;
+    letter-spacing: 4px;
+}
+#small-image{
+    width: 250px;
+    height: 300px;
+    /* background-color: red; */
+    background-image: url(https://media.istockphoto.com/id/1141663786/photo/high-fashion-model-in-colorful-bright-neon-lights-posing-at-studio.jpg?s=1024x1024&w=is&k=20&c=vhSaGlucf_4l8IFMkXKHJ5c9FgHBGWAW3KMGyMNsmbI=);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 60%;
+    right: 4%;
+    transform: translate(0,-50%);
+
+}
+#overlay-smallimg{
+    background-color: rgba(169, 165, 215, 0.676);
+    height: 100%;
+    width: 100%;
+  
+}
+#overlay-smallimg:hover{
+    transition: ease 0.8s;
+    box-shadow: 3px 3px 5px rgba(29, 3, 3, 0.392);
+}
+#rotated-text{
+    position: absolute;
+   right: -49%;
+   text-transform: uppercase;
+   transform-origin: 0% 0%;
+     transform: rotate(90deg);
+  
+}
+#rotated-text h1{
+    font-size: 50px;
+    font-weight: 700px;
+   color: transparent;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 12px;
+    
+}
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    top: 5%;
+    left: 5%;
+   
+}
+#nav img{
+    border-radius: 50%;
+    height: 70px;
+}
+
+#nav h5{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 600px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}

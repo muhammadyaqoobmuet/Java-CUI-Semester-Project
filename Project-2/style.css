@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f4f5f8;
+    display: flex;
+}
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    background-color: #ffffff;
+}
+#right{
+    height: 100%;
+    width: 60%;
+    background-color: #53577a;
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color: #93eb91;
+    display: flex;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-color: #eb85d4;
+    background-image: url(https://media.istockphoto.com/id/986615492/photo/fresh-lemons-and-strawberries-in-a-bowl-on-a-yellow-and-pink-background-flat-lay-top-view.jpg?s=1024x1024&w=is&k=20&c=-lF5bOfZsEPapSyfx5ELbHuj6UnMJ1HTDXKVdh1wHc4=);
+    background-size: cover;
+    background-position:   center;
+    transition: 0.1s ease;
+}
+
+#rtopleft{
+    width: 50%;
+    height: 100%;
+    background-color: #EFD595;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in;
+  
+}
+#rtopleft:hover{
+    transform: scale(1.009);
+    filter: grayscale(0%);
+    
+}
+#rtopright{
+    width: 50%;
+    height: 100%;
+    background-color: #EF9595;
+    background-image: url(https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80);
+    background-size: cover;
+    background-position: center;
+    transition: 0.1s ease;
+    
+}
+
+#lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   
+   
+    
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+   
+    
+}
+#lnavr a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: ease-in-out 2s;
+  
+}
+#lnav svg{
+    height: 17px;
+    width: 20px;
+    
+   
+}
+#left #center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#center-text h1{
+    font-size: 90px;
+
+}
+#center-text a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #000;
+  padding-top: 10px;
+  
+}
+#center-text p{
+    font-size: 12px;
+    margin-top: 18px;
+    line-height: 20px;
+    margin-bottom: 18px;
+    opacity: .9;
+    font-size: 15px;
+}
+
+
+#lnavr a:hover{
+    
+    transition: ease-in-out 0.2s;
+    scale: 1.1;
+    
+    
+}
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        flex-direction: column;
+        width: 100%;
+    }
+    #main #right{
+        flex-direction: column;
+        width: 100%;
+    }
+    #left #center-text{
+        margin-top: 10px;
+    }
+}
