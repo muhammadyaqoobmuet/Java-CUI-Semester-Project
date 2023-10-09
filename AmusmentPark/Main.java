@@ -1,6 +1,7 @@
 package AmusmentPark;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Main
